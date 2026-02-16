@@ -1,6 +1,8 @@
 import View from './View.js';
-import icons from '../../img/icons.svg';
+// import icons from '../../img/icons.svg';
 import fracty from 'fracty';
+
+const icons = new URL('../../img/icons.svg', import.meta.url).pathname;
 
 class RecipeView extends View {
   _parentElement = document.querySelector('.recipe');
@@ -31,6 +33,7 @@ class RecipeView extends View {
   }
 
   _generateMarkup() {
+    console.log('Recipe view icons path:', icons);
     return `
         <figure class="recipe__fig">
           <img src="${this._data.image}" alt="${this._data.title}" class="recipe__img" />
