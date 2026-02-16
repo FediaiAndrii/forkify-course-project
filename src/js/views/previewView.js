@@ -1,5 +1,5 @@
 import View from './View.js';
-import { ICONS as icons } from '../../config.js';
+import { ICONS as icons } from '../config.js';
 
 class PreviewView extends View {
   _parentElement = '';
