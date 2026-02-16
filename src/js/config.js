@@ -3,5 +3,5 @@ export const TIMEOUT_SEC = 10;
 export const RES_PER_PAGE = 10;
 export const KEY = '5f1b0a88-16d5-4523-b1da-358055018656';
 export const MODAL_CLOSE_SEC = 2.5;
-import iconsURL from 'url:../img/icons.svg';
+import iconsURL from 'url:../img/icons-fixed.svg';
 export const ICONS = iconsURL;
