@@ -4,12 +4,15 @@
   "description": "Recipe app",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir ./dist"
+    "build": "parcel build index.html --dist-dir ./dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Fediai Andrii",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.16.3",
+    "gh-pages": "^6.3.0",
     "parcel": "^2.16.3"
   },
   "dependencies": {
