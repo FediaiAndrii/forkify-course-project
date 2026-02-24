@@ -4,8 +4,8 @@
   "description": "Recipe app",
   "homepage": "https://fediaiandrii.github.io/forkify-course-project/",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir ./dist",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
